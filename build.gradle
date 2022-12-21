@@ -11,13 +11,14 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 repositories {
+	mavenLocal()
 	mavenCentral()
 }
 
 dependencies {
 
 	implementation 'com.structurizr:structurizr-dsl:1.21.0'
-	implementation 'com.structurizr:structurizr-export:1.8.0'
+	implementation 'com.structurizr:export:1.8.0-x1'
 	implementation 'io.github.goto1134:structurizr-d2-exporter:1.0.1'
 	implementation 'com.structurizr:structurizr-graphviz:1.6.1'
 
