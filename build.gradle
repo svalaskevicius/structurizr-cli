@@ -17,10 +17,10 @@ repositories {
 
 dependencies {
 
-	implementation 'com.structurizr:structurizr-dsl:1.21.0'
-	implementation 'com.structurizr:structurizr-export:1.8.0-x1'
-	implementation 'io.github.goto1134:structurizr-d2-exporter:1.0.1'
-	implementation 'com.structurizr:structurizr-graphviz:1.6.1'
+	implementation 'com.structurizr:structurizr-dsl:1.21.2-x1'
+	implementation 'com.structurizr:structurizr-export:1.8.1-x1'
+	// implementation 'io.github.goto1134:structurizr-d2-exporter:1.0.1'
+	// implementation 'com.structurizr:structurizr-graphviz:1.6.1'
 
 	implementation 'commons-cli:commons-cli:1.5.0'
 	implementation 'org.apache.httpcomponents.client5:httpclient5:5.1.3'

@@ -12,7 +12,7 @@ import com.structurizr.export.plantuml.StructurizrPlantUMLExporter;
 import com.structurizr.export.websequencediagrams.WebSequenceDiagramsExporter;
 import com.structurizr.util.WorkspaceUtils;
 import com.structurizr.view.ThemeUtils;
-import io.github.goto1134.structurizr.export.d2.D2Exporter;
+// import io.github.goto1134.structurizr.export.d2.D2Exporter;
 import org.apache.commons.cli.*;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -39,7 +39,7 @@ public class ExportCommand extends AbstractCommand {
     private static final String MERMAID_FORMAT = "mermaid";
     private static final String DOT_FORMAT = "dot";
     private static final String ILOGRAPH_FORMAT = "ilograph";
-    private static final String D2_FORMAT = "d2";
+    // private static final String D2_FORMAT = "d2";
     private static final String CUSTOM_FORMAT = "fqcn";
 
     private static final Map<String,Exporter> EXPORTERS = new HashMap<>();
@@ -55,7 +55,7 @@ public class ExportCommand extends AbstractCommand {
         EXPORTERS.put(DOT_FORMAT, new DOTExporter());
         EXPORTERS.put(WEBSEQUENCEDIAGRAMS_FORMAT, new WebSequenceDiagramsExporter());
         EXPORTERS.put(ILOGRAPH_FORMAT, new IlographExporter());
-        EXPORTERS.put(D2_FORMAT, new D2Exporter());
+        // EXPORTERS.put(D2_FORMAT, new D2Exporter());
     }
 
     public ExportCommand() {
@@ -115,7 +115,7 @@ public class ExportCommand extends AbstractCommand {
                 workspacePath = new File(workspacePathAsString);
                 workspace = WorkspaceUtils.loadWorkspaceFromJson(workspacePath);
             }
-            
+
         } else {
             log.info(" - loading workspace from DSL");
             StructurizrDslParser structurizrDslParser = new StructurizrDslParser();
@@ -143,7 +143,7 @@ public class ExportCommand extends AbstractCommand {
         if (outputPath == null) {
             outputPath = new File(workspacePath.getCanonicalPath()).getParent();
         }
-        
+
         File outputDir = new File(outputPath);
         outputDir.mkdirs();
 
